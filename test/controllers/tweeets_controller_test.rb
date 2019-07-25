@@ -3,6 +3,7 @@ require 'test_helper'
 class TweeetsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @tweeet = tweeets(:one)
+    @tweeet = Tweeet.new
   end
 
   test "should get index" do
